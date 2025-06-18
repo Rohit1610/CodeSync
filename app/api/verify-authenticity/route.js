@@ -1,8 +1,8 @@
 import connectDB from "@/config/database";
 import User from "@/models/User";
 
-export const POST = async (reqeust) => {
-  const data = await reqeust.json();
+export const POST = async (request) => {
+  const data = await request.json();
   try {
 
     const { codeforcesHandle , problem , email } = data
