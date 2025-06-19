@@ -50,7 +50,7 @@ const ProvideCodeforcesHandle = () => {
       });
       const data = await res.json();
       if (!data.ok && data.APIDown) {
-        toast.warn("Codeforces API is currently down... Unable to load graphs");
+        toast.warn("Codeforces API is currently down... Unable to load");
       } else if (data.ok && data.problem) {
         toast.success("Please verify your identity by submitting the question");
         setProblem(data.problem);
