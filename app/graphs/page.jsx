@@ -7,6 +7,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { toast } from "react-toastify";
 
 // Dynamically import with SSR disabled
+// server side rendering is disabled for these components
 const RatingGraph = dynamic(() => import("@/components/RatingGraph"), {
     ssr: false,
 });
